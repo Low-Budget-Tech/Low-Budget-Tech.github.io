@@ -1,0 +1,364 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+  direction: RTL;
+}
+/*hides scrollbar on page*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 400;
+	font-size: 100%;
+}
+
+p {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	margin-bottom: .35em;
+}
+
+h1 {
+	font-size: 3em;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 2em;
+	margin-top: 1em;
+}
+a{
+  text-decoration: none;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 10em 2em 10em 2em;
+}
+
+#videoheader {
+	height: 75vh;
+	position: relative;
+	top: 0;
+	width: 100%;
+}
+
+#header {
+	height: 60px;
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	width: 100%;
+	background-color: transparent;
+	padding-top: 10px;
+	-webkit-transition: background .1s;
+	-moz-transition: background .1s;
+	-webkit-transition: background .1s;
+	transition: background .1s;
+}
+
+#header .logo {
+	float: left;
+	padding-left: 10px;
+	font-size: 36px;
+}
+
+#header .logofont {
+	display: none;
+}
+
+#header .logofont,
+#headertitle,
+.sectiontitle {
+	font-family: Roboto;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.64);
+	font-weight: 400;
+	font-size: 40px;
+}
+
+#header .logofont .thin,
+#headertitle .thin,
+.sectiontitle .thin {
+	font-family: Roboto;
+	font-style: inherit;
+	font-weight: 200;
+}
+
+#header .social {
+	float: right;
+	margin-right: 40px;
+}
+
+#header .social .socialico {
+	margin: 5px;
+	color: rgba(255, 255, 255, 0.64);
+	font-size: 30px;
+}
+
+#headertitle {
+	z-index: 5;
+	position: absolute;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.64);
+	text-decoration: none;
+	font-size: 8vw;
+	z-index: 5;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-webkit-transition: opacity .2s;
+	transition: opacity .2s;
+}
+
+#waypoint1 {
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	z-index: 2;
+}
+
+.fullwidth {
+	width: 100%;
+	height: 200px;
+	padding: 50px 30px;
+	postion: fixed;
+}
+
+.clearfloat {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+/* SECTIONS */
+
+.sectiontitle {
+	text-align: center;
+}
+
+.sectioncontent {
+	padding: 20px 40px;
+}
+
+.leftbox {
+	width: 40%;
+	float: left;
+}
+
+.rightbox {
+	width: 59%;
+	float: right;
+}
+
+.about {
+	background-color: #BF360C;
+	color: #fafafa;
+	overflow: auto;
+	box-shadow: inset 0 20px 20px -20px #000000;
+	;
+}
+
+.about .rightbox p {
+	padding-left: 20px;
+}
+
+.about .sectiontitle {
+	color: #fafafa;
+}
+
+.patreon {
+	background-color: #F57F17;
+	color: #fafafa;
+	overflow: auto;
+	box-shadow: inset 0 20px 20px -20px #000000;
+	;
+}
+
+.patreon .rightbox p {
+	padding-left: 20px;
+}
+
+.patreon .sectiontitle {
+	color: #fafafa;
+}
+
+.youtube {
+	background-color: #b12a41;
+	color: #fafafa;
+	box-shadow: inset 0 20px 20px -20px #000000;
+	;
+}
+
+.youtube .sectiontitle {
+	color: #fafafa;
+}
+
+.contact {
+	background-color: #0cbf92;
+	color: #fafafa;
+	box-shadow: inset 0 20px 20px -20px #000000;
+	;
+}
+
+.contact .sectiontitle {
+	color: #fafafa;
+}
+
+.contact {
+	background-color: #0bcf92;
+	color: #fafafa;
+	box-shadow: inset 0 20px 20px -20px #000000;
+	;
+}
+
+.bar {
+	text-align: center;
+}
+
+.info {
+	display: none;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 180%;
+
+}
+.form{
+	display: none;
+}
+
+/*contact*/
+.uppercase {
+  text-transform: uppercase;
+}
+.bottom-line {
+  border-bottom: 2px solid #c3c3c3;
+}
+.form-control {
+  box-shadow: none;
+  border-radius: 0;
+  background-color: #f7f7f7;
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+	width: 300px;
+	padding: 10px 10px 12px 60px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #555;
+	border: 1px solid $b;
+	background-color: #fff;
+}
+textarea#message {
+  min-height: 100px;
+  resize: vertical;
+  overflow: hidden;
+  border-bottom: 0px;
+}
+button#contact-submit {
+  text-transform: uppercase;
+  border-bottom: 2px solid #c3c3c3;
+  margin-top: 20px;
+  letter-spacing: 4px;
+}
+#contact-submit:hover{
+  animation: buttonAnimate;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  border-left: 2px solid #c3c3c3;
+  border-right: 2px solid #c3c3c3;
+  border-top: 2px solid #c3c3c3;
+  box-shadow: 12px 29px 20px -8px rgba(0, 0, 0, .25)
+
+}
+#contact-submit:active{
+  border-left: 0px solid #c3c3c3;
+  border-right: 0px solid #c3c3c3;
+  border-top: 0px solid #c3c3c3;
+  color: rgba(#f00,.49);
+  box-shadow: 12px 30px 30px -10px rgba(0, 0, 0, .25)
+  top: -5px;
+}
+#contact-submit{
+  width: 200px;
+  height: 10%;
+  background: #19BC99;
+  padding: 10px 45px;
+  border: 2px solid #19CC90 ;
+  border-radius: 60px;
+  cursor: pointer;
+  outline: none;
+  transition: all 250ms;
+  box-shadow: 10px 25px 20px -6px rgba(0, 0, 0, .25)
+}
+/*Input Click Animation*/
+.inputPlaceholder {
+	display: inline-block;
+	position: relative;
+	margin: 0 5px 0 0;
+}
+.inputPlaceholder input {
+	transition: .1s all linear;
+}
+.inputPlaceholder label {
+	position: absolute;
+	top: 14px;
+	font-size: 16px;
+	color: #aaa;
+	transition: .1s all linear;
+	cursor: text;
+}
+
+/*Media tags are used for text animation on diff screen sizes*/
+@media screen and (max-width: 771px){
+	.inputPlaceholder label {
+		left: 15px;
+	}
+	.form-group  .inputPlaceholder.active input {
+		padding-left: 15px;
+	}
+	.form-group  .inputPlaceholder.active label {
+		top: -50px;
+		box-shadow: 20px 25px 20px -4px rgba(0, 0, 0, .5);
+	}
+}
+@media screen and (min-width: 771px){
+	.form-group  .inputPlaceholder.active input {
+		padding-left: 15px;
+	}
+	.form-group  .inputPlaceholder.active label {
+		left: 64%;
+		top: -5px;
+		box-shadow: 31px 25px 20px -4px rgba(0, 0, 0, .5);
+	}
+}
+@media screen and (min-width: 1340px){
+	.form-group  .inputPlaceholder.active input {
+		padding-left: 15px;
+	}
+	.form-group  .inputPlaceholder.active label {
+		left: 60%;
+		top: -5px;
+		box-shadow: 31px 25px 20px -4px rgba(0, 0, 0, .5);
+	}
+}
